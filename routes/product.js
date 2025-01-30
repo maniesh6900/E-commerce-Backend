@@ -4,7 +4,7 @@ const {verifyToken, verifyTokenandauthorization, verifyTokenandAdmin } = require
 const CryptoJS = require("crypto-js");
 
 //Create
-router.post("/", verifyTokenandAdmin, async (req, res)=>{
+router.post("/", async (req, res)=>{
     const newProdut  = new Product(req.body);
 
 try {
